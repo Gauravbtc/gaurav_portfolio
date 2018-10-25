@@ -1,6 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ContactForm from './contact_form';
+
 
  class Contact extends Component {
+  submit = (values) => {
+    console.log(values);
+    
+  }
   render() {
     return (
       <section id="contact">
@@ -17,7 +23,8 @@ import React, { Component } from 'react'
 
    	  <div className="row contact-form">
         <div className="col-twelve">
-          <form name="contactForm" id="contactForm" method="post" action="">
+          <ContactForm onSubmit={this.submit} />
+          {/* <form name="contactForm" id="contactForm" method="post" action="">
           <fieldset>
             <div className="form-field">
               <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minLength="2" required=""/>
@@ -43,9 +50,7 @@ import React, { Component } from 'react'
               </div>
              </div>
           </fieldset>
-        </form> 
-
-              
+        </form>  */}              
         <div id="message-warning"></div>    
         <div id="message-success">
           <i className="fa fa-check"></i>Your message was sent, thank you!<br/>>
