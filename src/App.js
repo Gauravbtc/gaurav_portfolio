@@ -4,7 +4,7 @@ import Intro from './component/intro';
 import About from './component/about';
 import Resume from './component/resume';
 import Portfolio from './component/portfolio';
-import Contact from './component/contact';
+import Contact from './container/ContactContainer';
 
 
 class App extends Component {

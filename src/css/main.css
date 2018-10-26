@@ -2369,7 +2369,6 @@ header .logo a {
 	background: #cc005f;
 }
 #message-warning, #message-success {
-	display: none;
 	background: #0d0d0d;
 	border-radius: 3px;
 	padding: 3rem;
@@ -2388,7 +2387,6 @@ header .logo a {
 
 /* form loader */
 #submit-loader {
-	display: none;
 	position: relative;
 	left: 0;
 	top: 1.8rem;

@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
 import ContactForm from './contact_form';
 
-
- class Contact extends Component {
+class Contact extends Component {
   submit = (values) => {
     console.log(values);
-    
+    var contact = {
+      "contact": {
+        "name": values.name,
+        "email": values.email,
+        "subject": values.subject
+      }
+    }
+    this.props.createContact(contact)  
   }
+
+
   render() {
+    const { loading , error,
+    success} = this.props.contactNew;
     return (
       <section id="contact">
         <div className="row section-intro">
@@ -23,38 +33,11 @@ import ContactForm from './contact_form';
 
    	  <div className="row contact-form">
         <div className="col-twelve">
-          <ContactForm onSubmit={this.submit} />
-          {/* <form name="contactForm" id="contactForm" method="post" action="">
-          <fieldset>
-            <div className="form-field">
-              <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minLength="2" required=""/>
-            </div>
-            <div className="form-field">
-              <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required=""/>
-            </div>
-            <div className="form-field">
-              <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""/>
-            </div>
-            <div className="form-field">
-                <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-            </div>
-            <div className="form-field">
-              <button className="submitform">Submit</button>
-              <div id="submit-loader">
-                <div className="text-loader">Sending...</div>
-              <div className="s-loader">
-              <div className="bounce1"></div>
-              <div className="bounce2"></div>
-              <div className="bounce3"></div>
-              </div>
-              </div>
-             </div>
-          </fieldset>
-        </form>  */}              
-        <div id="message-warning"></div>    
-        <div id="message-success">
-          <i className="fa fa-check"></i>Your message was sent, thank you!<br/>>
-        </div>
+          <ContactForm onSubmit={this.submit} loading= {loading}/>              
+          {error && <div id="message-warning">Something went wrong. Please try again. </div>}    
+          {success && <div id="message-success">
+          <i className="fa fa-check"></i>Your message was sent, thank you!<br/>
+        </div>}
         </div> 
       </div> 
 
