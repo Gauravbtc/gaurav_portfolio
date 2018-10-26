@@ -3,6 +3,16 @@ import { Field, reduxForm } from 'redux-form';
 
 const required = value => (value ? undefined : 'This Field is Required')
 
+
+const validate = (values) => {
+  const errors = {};
+  if(!values.message) {
+      errors.message = 'This Field is Required';
+  }
+  return errors;
+};
+
+
 const renderField = ({input,label,type,meta: { touched, error }}) =>
   <div>
     <div>
@@ -15,11 +25,23 @@ const renderField = ({input,label,type,meta: { touched, error }}) =>
     </div>
   </div>
 
+const renderTextAreaField = ({input,label,type,meta: { touched, error }}) =>
+<div>
+  <div>
+  <textarea {...input} placeholder= {label} rows="10" cols="50" />
+    {touched &&
+      ((error &&
+        <label>
+          {error}
+        </label>))}
+  </div>
+</div>
+ 
+
 class ContactForm extends Component{
   render(){
     const { handleSubmit, loading } = this.props
-    console.log(loading);
-
+  
     return(
       <form name="contactForm" id="contactForm" onSubmit={ handleSubmit }>
           <fieldset>
@@ -33,7 +55,7 @@ class ContactForm extends Component{
               <Field name="subject" component={renderField} type="text" id="contactSubject" label="Subject " validate={[required]}/>
             </div>
             <div className="form-field">
-                <Field name="body" component="textarea" id="contactMessage" label="message " rows="10" placeholder="Message"  cols="50" validate={[required]}/>
+                <Field name="body" component={renderTextAreaField} id="contactMessage" label="Message " cols="50" validate={[required]}/>
             </div>
             <div className="form-field">
               <button className="submitform">Submit</button>
@@ -57,6 +79,7 @@ class ContactForm extends Component{
 ContactForm = reduxForm({
   // a unique name for the form
   form: 'ContactForm',
+  validate
 
 })(ContactForm)
 

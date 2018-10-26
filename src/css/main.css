@@ -2557,6 +2557,14 @@ footer .copyright span:last-child::after {
 	}
 }
 
+
+/** 
+advowire img 
+*/
+.advowire-img{
+	height: 276px !important;
+} 
+
 /**
  * go to top - (_layout.scss)
  * ------------------------------------------------------------------- 

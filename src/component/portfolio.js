@@ -33,7 +33,7 @@ class Portfolio extends Component {
                 </div> 
                 <div className="bgrid folio-item">
                   <div className="item-wrap">
-                    <img src= {advowire} alt="Advowire"/>
+                    <img src= {advowire} alt="Advowire" className="advowire-img" />
                     <a href="https://www.advowire.com/" className="overlay">
                         <div className="folio-item-table">
                           <div className="folio-item-cell">
