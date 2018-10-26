@@ -19,7 +19,6 @@ class Intro extends Component {
               </p>
               <a className="button stroke smoothscroll" href="#about" title="">More About Me</a>
             </div>
-  
           </div>
         </div> 
         <ul className="intro-social">

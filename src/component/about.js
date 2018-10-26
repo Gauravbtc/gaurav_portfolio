@@ -55,12 +55,12 @@ class About extends Component {
                 <strong>ReactJs/Redux</strong>
               </li>
               <li>
-                <div className="progress percent70"><span>70%</span></div>
+                <div className="progress percent75"><span>75%</span></div>
                 <strong>JQuery</strong>
               </li>
               <li>
-                <div className="progress percent70"><span>70%</span></div>
-                <strong>Postgeysql</strong>
+                <div className="progress percent80"><span>80%</span></div>
+                <strong>Postgresql</strong>
               </li>
               <li>
                 <div className="progress percent80"><span>80%</span></div>
