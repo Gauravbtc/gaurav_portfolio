@@ -41,7 +41,7 @@ class Header extends Component {
         <div className="top-bar">
           <a role="button" className="menu-toggle"><span>Menu</span></a>
 
-          <div className="logo">
+          <div className="">
               <a href="index.html">Gaurav</a>
             </div>		      
 

@@ -25,9 +25,6 @@ class Contact extends Component {
 
             <h5>Contact</h5>
             <h1>I'd Love To Hear From You.</h1>
-
-            <p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
           </div>
         </div> 
 
@@ -48,11 +45,10 @@ class Contact extends Component {
           </div>
           <h5>Where to find me</h5>
           <p>
-            A7 Shivnagari Society<br/>
-            Bombay Match Factory Compound<br/>
-            B/H Railway Station, Khambhat<br/>
-            Khambhat(388620), Anand<br/>
-            India
+            Club House 201<br/>
+            〒305-0033 Ibaraki-ken,<br/>
+            Tsukuba-shi, Higashiarai,<br/>
+            Japan<br/>
           </p>
         </div>
         <div className="col-four tab-full collapse">
@@ -68,7 +64,7 @@ class Contact extends Component {
             <i className="icon-phone"></i>
           </div>
           <h5>Call Me At</h5>
-          <p>Mobile: (+91) 958 604 9525</p>
+          <p>Mobile: (+81) 817 098 3828</p>
         </div>
       </div> 
 	  </section>

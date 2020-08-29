@@ -16,6 +16,7 @@ class Intro extends Component {
               <p className="intro-position">
                 <span>Ruby On Rails Developer</span>
                 <span>ReactJs / Redux Developer</span>
+                <span> AWS Certified Cloud Practitioner</span>
               </p>
               <a className="button stroke smoothscroll" href="#about" title="">More About Me</a>
             </div>

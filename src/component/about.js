@@ -12,14 +12,17 @@ class About extends Component {
             <h1>Let me introduce myself.</h1>
             <div className="intro-info">
               <img src= {profie_pic} alt= {"Profile Pic"}/>
-              <p className="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+              <p className="lead">My Self Gaurav Makwana I am from India, Right now I am working in Vebuin Pvt Ltd in Tsukuba Ibaraki Japan as a Ruby On Rails Developer.</p>
             </div>
           </div>
         </div>
         <div className="row about-content">
           <div className="col-six tab-full">
             <h3>Profile</h3>
-            <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+            <p>I had 4+ Years of experience in Ruby On Rails
+              also work on Reactjs, Recently I achieved AWS cloud practitioner
+              certificate.
+            </p>
 
             <ul className="info-list">
               <li>
@@ -39,16 +42,33 @@ class About extends Component {
                 <strong>Email:</strong>
                 <span>gauravmakwana93@gmail.com</span>
               </li>
+              <li>
+                <strong>Mobile No:</strong>
+                <span>+81 8071983828</span>
+              </li>
+              
             </ul> 
           </div>
 
           <div className="col-six tab-full">
             <h3>Skills</h3>
-            <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+            <p>I had below technical skills.</p>
             <ul className="skill-bars">
               <li>
                 <div className="progress percent90"><span>85%</span></div>
                 <strong>Ruby On Rails</strong>
+              </li>
+              <li>
+                <div className="progress percent80"><span>80%</span></div>
+                <strong>RSpec</strong>
+              </li>
+              <li>
+                <div className="progress percent60"><span>60%</span></div>
+                <strong>Docker Basic</strong>
+              </li>
+              <li>
+                <div className="progress percent70"><span>70%</span></div>
+                <strong>AWS Fundamentals</strong>
               </li>
               <li>
                 <div className="progress percent75"><span>75%</span></div>
@@ -73,7 +93,7 @@ class About extends Component {
    	  <div className="row button-section">
         <div className="col-twelve">
           <a href="#contact" title="Hire Me" className="button stroke smoothscroll">Hire Me</a>
-          <a href= {Host}  target= "new"title="Download CV" className="button button-primary">Download CV</a>
+          <a href= {Host} target= "new"title="Download CV" className="button button-primary">Download CV</a>
         </div>
    	  </div>
    </section> 
